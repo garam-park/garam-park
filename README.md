@@ -1,7 +1,6 @@
-* [Youtube](https://www.youtube.com/channel/UCtsaG2ePUxvo0-se9gkxEmg)
-* [Blog](https://garam-park.github.io)
+#
+![Garam's GitHub stats](https://github-readme-stats.vercel.app/api?username=garam-park&theme=rose_pine)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=garam-park&layout=compact&theme=rose_pine)
 
-
-[![Garam's GitHub stats](https://github-readme-stats.vercel.app/api?username=garam-park&theme=rose_pine)]()
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=garam-park&layout=compact&theme=rose_pine)]()
+# 
+<img src="https://img.shields.io/badge/Youtube-red?style=flate-square&logo=youtube&label=story.g&link=https%3A%2F%2Fwww.youtube.com%2F%40story.g">
