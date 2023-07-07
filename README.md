@@ -1,5 +1,5 @@
 * [Youtube](https://www.youtube.com/channel/UCtsaG2ePUxvo0-se9gkxEmg)
-* [Blog](https://blog.storyg.co)
+* [Blog](https://garam-park.github.io)
 
 
 [![Garam's GitHub stats](https://github-readme-stats.vercel.app/api?username=garam-park&theme=rose_pine)]()
