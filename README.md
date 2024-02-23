@@ -1,5 +1,5 @@
 #
-![Garam's GitHub stats](https://github-readme-stats.vercel.app/api?username=garam-park&theme=rose_pine)
+![Garam's GitHub stats](https://github-readme-stats.vercel.app/api?username=garam-park)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=garam-park&layout=compact&theme=rose_pine)
 
 # 
