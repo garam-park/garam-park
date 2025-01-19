@@ -3,7 +3,7 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=garam-park&layout=compact&hide=html,css,scss,php,javascript)
 
 # 
-<a href="https://www.youtube.com/c/https://www.youtube.com/@story.g" target="blank"><img src="https://img.shields.io/badge/Youtube-red?style=flate-square&logo=youtube&label=story.g&link=[https%3A%2F%2Fwww.youtube.com%2F%40story.g](https://www.youtube.com/@story.g)"></image></a>
+<a href="https://www.youtube.com/@story.g" target="blank"><img src="https://img.shields.io/badge/Youtube-red?style=flate-square&logo=youtube&label=story.g"></image></a>
 
 📋 Languages
 
