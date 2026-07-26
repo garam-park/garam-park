@@ -1,83 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">From experiment to team system</title>
-  <desc id="desc">Many exploratory paths converge into three repeatable system lines.</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" role="img" aria-label="Garam Park — Software Engineering">
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0b2239"/>
-      <stop offset="0.33" stop-color="#18344f"/>
-      <stop offset="0.61" stop-color="#edf0ed"/>
-      <stop offset="1" stop-color="#f6f2e9"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0b1020"/>
+      <stop offset="65%"  stop-color="#0f1626"/>
+      <stop offset="100%" stop-color="#1a2230"/>
     </linearGradient>
-    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="11" result="noise"/>
-      <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
-      <feComponentTransfer in="mono" result="softNoise">
-        <feFuncA type="table" tableValues="0 0.075"/>
-      </feComponentTransfer>
-      <feBlend in="SourceGraphic" in2="softNoise" mode="soft-light"/>
+    <pattern id="grid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.6" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+    <radialGradient id="vignette" cx="25%" cy="50%" r="55%">
+      <stop offset="0%"  stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="node" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#b6f5d6"/>
+      <stop offset="60%" stop-color="#7ee3b8"/>
+      <stop offset="100%" stop-color="#5fcfa0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-    <linearGradient id="lineFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8ba2b5" stop-opacity="0.12"/>
-      <stop offset="0.45" stop-color="#6f879b" stop-opacity="0.65"/>
-      <stop offset="1" stop-color="#173b60" stop-opacity="0.95"/>
-    </linearGradient>
   </defs>
 
-  <rect width="1200" height="300" fill="url(#background)" filter="url(#grain)"/>
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <rect width="1280" height="400" fill="url(#grid)"/>
+  <rect width="1280" height="400" fill="url(#vignette)"/>
 
-  <g fill="none" stroke="url(#lineFade)" stroke-width="1.15">
-    <path d="M350 30 C480 28 505 74 625 80 S725 120 830 120"/>
-    <path d="M325 51 C455 50 545 44 630 95 S736 135 830 135" stroke-dasharray="2.5 5"/>
-    <path d="M390 69 C500 70 525 108 642 108 S740 145 830 145"/>
-    <path d="M336 91 C445 88 520 126 625 126 S730 148 830 150" stroke-dasharray="4 4"/>
-    <path d="M370 112 C485 110 510 155 624 147 S720 151 830 150"/>
-    <path d="M318 134 C435 132 515 172 620 165 S725 160 830 165"/>
-    <path d="M360 156 C470 152 520 190 630 182 S730 172 830 175" stroke-dasharray="2 5"/>
-    <path d="M330 179 C460 175 540 212 642 199 S732 186 830 185"/>
-    <path d="M382 204 C490 200 545 232 650 218 S748 202 830 195"/>
-    <path d="M342 231 C472 223 565 251 664 230 S750 214 830 200" stroke-dasharray="5 4"/>
-    <path d="M404 258 C510 246 575 266 675 238 S760 216 830 200"/>
+  <!-- Left: type block (kept in a 540px column on the left) -->
+  <g font-family="-apple-system, 'SF Pro Display', 'Pretendard', 'Apple SD Gothic Neo', system-ui, sans-serif">
+    <line x1="80" y1="80" x2="116" y2="80" stroke="#7ee3b8" stroke-width="2"/>
+    <circle cx="128" cy="80" r="2.5" fill="#7ee3b8"/>
+    <text x="140" y="85" fill="#9aa6b8" font-size="12.5" letter-spacing="3" font-weight="600">GARAM PARK · SOFTWARE ENGINEERING</text>
+
+    <text x="80" y="160" fill="#f4f6fa" font-size="40" font-weight="800" letter-spacing="-0.8">FROM EXPERIMENT</text>
+    <text x="80" y="210" fill="#f4f6fa" font-size="40" font-weight="800" letter-spacing="-0.8">TO TEAM SYSTEM</text>
+    <line x1="80" y1="228" x2="190" y2="228" stroke="#7ee3b8" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+
+    <text x="80" y="270" fill="#c2cad8" font-size="15" font-weight="400">AI-assisted developer workflows</text>
+    <text x="80" y="291" fill="#c2cad8" font-size="15" font-weight="400">for software teams</text>
+    <text x="80" y="320" fill="#6b7589" font-size="11" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, monospace" letter-spacing="0.5">v.2026 — shipping internal tools</text>
   </g>
 
-  <g fill="#7890a4" opacity="0.8">
-    <circle cx="350" cy="30" r="2.4"/>
-    <circle cx="325" cy="51" r="2.4"/>
-    <circle cx="390" cy="69" r="2.4"/>
-    <circle cx="336" cy="91" r="2.4"/>
-    <circle cx="370" cy="112" r="2.4"/>
-    <circle cx="318" cy="134" r="2.4"/>
-    <circle cx="360" cy="156" r="2.4"/>
-    <circle cx="330" cy="179" r="2.4"/>
-    <circle cx="382" cy="204" r="2.4"/>
-    <circle cx="342" cy="231" r="2.4"/>
-    <circle cx="404" cy="258" r="2.4"/>
-  </g>
+  <!-- Right: convergence diagram (group origin placed so the whole thing fits in 1280 width) -->
+  <g transform="translate(900, 200)" fill="none" stroke-linecap="round">
+    <!-- Vertical center guide -->
+    <g stroke="#3a4458" stroke-width="0.6" stroke-dasharray="2 4" opacity="0.5">
+      <line x1="0" y1="-110" x2="0" y2="80"/>
+    </g>
 
-  <g fill="none" stroke="#173b60" stroke-width="1.45">
-    <path d="M830 120 H1200"/>
-    <path d="M830 150 H1200"/>
-    <path d="M830 200 H1200"/>
-  </g>
-  <g fill="#173b60">
-    <circle cx="830" cy="120" r="4"/>
-    <circle cx="830" cy="150" r="4"/>
-    <circle cx="830" cy="200" r="4"/>
-  </g>
-  <circle cx="746" cy="151" r="3.2" fill="#62bfd0"/>
+    <!-- Incoming experiment lines -->
+    <g stroke-width="1.1" opacity="0.8">
+      <path d="M -290 -90 C -190 -90, -130 -38, -70 -10" stroke="#5b6b85" stroke-dasharray="2 4"/>
+      <path d="M -290 -64 C -190 -64, -130 -20, -70  -3" stroke="#6a7a93" stroke-dasharray="1 5"/>
+      <path d="M -290 -38 C -190 -38, -130  -8, -70   0" stroke="#7ee3b8"/>
+      <path d="M -290 -12 C -190 -12, -130   4, -70   3" stroke="#6a7a93" stroke-dasharray="1 5"/>
+      <path d="M -290  14 C -190  14, -130  18, -70   8" stroke="#5b6b85" stroke-dasharray="3 4"/>
+      <path d="M -290  40 C -190  40, -130  28, -70  14" stroke="#6a7a93" stroke-dasharray="1 4"/>
+      <path d="M -290  66 C -190  66, -130  38, -70  18" stroke="#5b6b85" stroke-dasharray="2 4"/>
+      <path d="M -290  92 C -190  92, -130  48, -70  22" stroke="#6a7a93" stroke-dasharray="4 4"/>
+    </g>
 
-  <g font-family="Inter, SF Pro Display, Helvetica Neue, Arial, sans-serif">
-    <text x="70" y="52" fill="#a9c2d5" font-size="12" font-weight="600" letter-spacing="3">
-      GARAM PARK / SOFTWARE ENGINEERING
-    </text>
-    <text x="70" y="112" fill="#fbf8f0" font-size="37" font-weight="750" letter-spacing="1.2">
-      FROM EXPERIMENT
-    </text>
-    <text x="70" y="158" fill="#fbf8f0" font-size="37" font-weight="750" letter-spacing="1.2">
-      TO TEAM SYSTEM
-    </text>
-    <text x="70" y="204" fill="#c9dce9" font-size="15" font-weight="450" letter-spacing="0.2">
-      AI-assisted developer workflows for software teams
-    </text>
+    <!-- Source dots -->
+    <g fill="#6a7a93" opacity="0.9">
+      <circle cx="-290" cy="-90" r="1.6"/>
+      <circle cx="-290" cy="-64" r="1.6"/>
+      <circle cx="-290" cy="-38" r="1.6"/>
+      <circle cx="-290" cy="-12" r="1.6"/>
+      <circle cx="-290" cy="14"  r="1.6"/>
+      <circle cx="-290" cy="40"  r="1.6"/>
+      <circle cx="-290" cy="66"  r="1.6"/>
+      <circle cx="-290" cy="92"  r="1.6"/>
+    </g>
+
+    <!-- Convergence node -->
+    <g filter="url(#glow)">
+      <circle cx="0" cy="0" r="9" fill="url(#node)"/>
+    </g>
+    <circle cx="0" cy="0" r="13" fill="none" stroke="#7ee3b8" stroke-width="1" opacity="0.45"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#7ee3b8" stroke-width="0.6" opacity="0.22"/>
+    <text x="0" y="42" text-anchor="middle" font-family="'SF Mono', 'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.5" fill="#9aa6b8" opacity="0.9">// CONVERGE</text>
+
+    <!-- Outgoing system lines (3 channels) -->
+    <g stroke="#3a4658" stroke-width="1.1">
+      <line x1="16" y1="-12" x2="240" y2="-12"/>
+      <line x1="16" y1="0"   x2="240" y2="0"/>
+      <line x1="16" y1="12"  x2="240" y2="12"/>
+    </g>
+
+    <!-- Output endpoints + labels (kept inside the canvas) -->
+    <g font-family="'SF Mono', 'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1.4">
+      <circle cx="240" cy="-12" r="2.2" fill="#7ee3b8"/>
+      <text x="248" y="-9" fill="#c2cad8" font-weight="600">TOOLS</text>
+
+      <circle cx="240" cy="0" r="2.2" fill="#7ee3b8"/>
+      <text x="248" y="3" fill="#c2cad8" font-weight="600">WORKFLOWS</text>
+
+      <circle cx="240" cy="12" r="2.2" fill="#7ee3b8"/>
+      <text x="248" y="15" fill="#c2cad8" font-weight="600">PLAYBOOKS</text>
+    </g>
   </g>
 </svg>
